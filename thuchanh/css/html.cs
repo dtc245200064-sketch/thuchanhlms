@@ -1,7 +1,23 @@
-.overflow-box {
-    width: 300px;
-    height: 100px;
-    background-color: lightgray;
-    padding: 10px;
-    overflow: auto;
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    margin-top: 20px;
+}
+
+.box {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    background-color: lightblue;
+    margin: 10px;
 }
