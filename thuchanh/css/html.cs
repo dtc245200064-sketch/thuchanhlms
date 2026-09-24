@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.navbar {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,50 +17,51 @@ body {
     color: white;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.nav-links {
+.nav ul {
     list-style: none;
     display: flex;
 }
 
-.nav-links li {
+.nav ul li {
     margin: 0 15px;
 }
 
-.nav-links a {
+.nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
 }
 
-.menu-icon {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f4f4f4;
 }
 
-/* ✅ Responsive cho Mobile */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333;
-        width: 100%;
-        text-align: center;
-    }
+.services {
+    text-align: center;
+    padding: 50px;
+}
 
-    .nav-links li {
-        padding: 10px;
-    }
+.service-container {
+    display: flex;
+    justify-content: space-around;
+}
 
-    .menu-icon {
-        display: block;
-    }
+.service {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 10px;
+}
+
+.testimonials {
+    text-align: center;
+    padding: 50px;
+    background-color: #ddd;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
