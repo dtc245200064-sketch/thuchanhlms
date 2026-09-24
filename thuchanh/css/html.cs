@@ -8,60 +8,40 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+    height: 100vh;
+}
+
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    grid-area: header;
     background-color: #333;
-    padding: 15px 20px;
     color: white;
-}
-
-.nav ul {
-    list-style: none;
-    display: flex;
-}
-
-.nav ul li {
-    margin: 0 15px;
-}
-
-.nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-.hero {
     text-align: center;
-    padding: 100px 20px;
-    background-color: #f4f4f4;
-}
-
-.services {
-    text-align: center;
-    padding: 50px;
-}
-
-.service-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.service {
-    background-color: lightblue;
     padding: 20px;
-    margin: 10px;
 }
 
-.testimonials {
-    text-align: center;
-    padding: 50px;
-    background-color: #ddd;
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.content {
+    grid-area: content;
+    padding: 20px;
 }
 
 .footer {
-    text-align: center;
-    padding: 20px;
+    grid-area: footer;
     background-color: #333;
     color: white;
+    text-align: center;
+    padding: 20px;
 }
